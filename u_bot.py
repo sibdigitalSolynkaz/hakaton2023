@@ -19,7 +19,7 @@ dp = Dispatcher(bot, storage=MemoryStorage())
 # Обработчик команды /start
 @dp.message_handler(commands=["start"])
 async def send_welcome(message: types.Message):
-    await message.answer("Привет! Я бот. Спроси меня что-нибудь!")
+    await message.answer("Привет! Я бот команды 5Head Team. Готов ответить на ваши вопросы!")
 
 
 # Обработчик всех остальных сообщений
