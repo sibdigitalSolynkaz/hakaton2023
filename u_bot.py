@@ -42,8 +42,7 @@ async def answer_question(message: types.Message):
 
     # Если наиболее подходящий вопрос найден, отправляем соответствующий ответ
     if best_question is not None and best_similarity > 0.6:
-        # Замена переменной {дата} на текущую дату
-        answer = best_answer.replace("{дата}", datetime.date.today().strftime("%d.%m.%Y"))
+        answer = best_answer
         await message.answer(answer)
     else:
         await message.answer("Переформулируйте вопрос, пожалуйста.")
